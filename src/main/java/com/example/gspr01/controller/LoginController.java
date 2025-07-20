@@ -10,15 +10,15 @@ import com.example.gspr01.model.User;
 @RequestMapping("/api")
 public class LoginController {
 
-    @Autowired
-    private UserMapper userMapper;
+//    @Autowired
+//    private UserMapper userMapper;
 
     @PostMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password) {
-        User user = userMapper.findByUsername(username);
-        if (user != null && user.getPassword().equals(password)) {
-            return "Login Success";
-        }
+        // User user = userMapper.findByUsername(username);
+        // if (user != null && user.getPassword().equals(password)) {
+        //     return "Login Success";
+        // }
         return "Login Failed";
     }
 }

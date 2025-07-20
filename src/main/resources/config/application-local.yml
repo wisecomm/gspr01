@@ -2,7 +2,7 @@
 spring:
   # 1. Spring Boot JDBC + HikariCP 설정
   datasource:
- #   url: jdbc:postgresql://211.188.56.111:5432/postgres
+    url: jdbc:postgresql://211.188.56.111:5432/postgres
     hikari:
       driver-class-name: org.postgresql.Driver
       jdbc-url: jdbc:postgresql://211.188.56.111:5432/postgres
